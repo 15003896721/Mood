@@ -1,0 +1,18 @@
+<view class="add">
+<view class='add-box'>
+<!-- 发表内容 -->
+<view class='fb-box'>
+  <textarea class='fb-texts' auto-focus='true' data-item="texts" value="{{texts}}"  bindinput='myText' placeholder='分享新鲜事....'></textarea>
+</view>
+  <!-- 添加图片、发表 -->
+<view class='fbs'>
+  <view bindtap='myPhoto'>
+    <image src='http://127.0.0.1:3008/img/photo.png'  mode="widthFix"></image>
+    <view class='addphoto'>添加照片</view>
+  </view>
+  <view>
+    <button class='btn' bindtap='fb'>发表</button>  
+  </view>
+</view>
+  </view>
+</view>

@@ -1,0 +1,74 @@
+.collect-box{
+  text-align: center;
+  padding: 25rpx;
+}
+.collect-box .mycollect-empty{
+    margin: 0;
+    padding: 40rpx;
+    border: 0;
+    font-family: serif;
+    font-size: 100%; 
+}
+.collect-box .mycollect-empty .collect-empty {
+    height: 200rpx;
+    padding-top: 3.2rem;
+    background-color: #fff;
+    text-align: center;
+}
+.collect-box .mycollect-empty .collect-empty .gocollect {
+    width: 300rpx;
+    height: 60rpx;
+    margin: 20rpx auto;
+    border: 1px solid #ff3700;
+    color: #ff3700;
+    text-align: center;
+    display: block;
+    border-radius: 15rpx;
+    line-height: 60rpx;
+    background: transparent;
+    font-size: 16px;
+    font-family: serif;
+}
+.collect-box .collect-empty .empty-text {
+    font-size: .64667rem;
+    color: #222;
+    margin-top: .53333rem;
+    line-height: .74667rem;
+    font-weight: 400;
+}
+.collect-box .collect-list{
+  padding: 15rpx;
+  border-radius: 20rpx;
+  background-color: #f2f3c2;
+  margin-bottom: 30rpx;
+}
+.collect-box .collect-list .collect-img{
+  width: 100%;
+  text-align: center;
+}
+.collect-box .collect-list .collect-img image{
+  width: 100%;
+  border-radius: 20rpx;
+}
+.collect-box .collect-list .collect-text{
+  padding:0rpx 10rpx 10rpx;
+  text-align: left;
+  border-bottom: 1px solid #d3d2d2;
+}
+.collect-box .collect-list .collect-foot{
+  height: 80rpx;
+  padding: 0rpx 25rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  align-items: center;
+}
+.collect-box .collect-list .collect-foot image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.collect-box .collect-list .collect-foot text{
+  margin-right: 10rpx;
+  font-size: 22px;
+  font-family: serif;
+}

@@ -1,0 +1,41 @@
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <view class='collect-box'>
+      <view class='mycollect'>
+        <image src='http://127.0.0.1:3008/img/heart-active.png'></image>
+        <text>我的收藏</text>
+      </view>
+      <view class='gotocollect'  bindtap="gotocollect">
+        <image src='http://127.0.0.1:3008/img/right.png'></image>
+      </view>
+    </view>
+    <view class='collect-box'>
+      <view class='mycollect'>
+        <image src='http://127.0.0.1:3008/img/publish-active.png'></image>
+        <text>今日心情</text>
+      </view>
+      <view class='gotocollect'  bindtap="gotoadd">
+        <image src='http://127.0.0.1:3008/img/right.png'></image>
+      </view>
+    </view>
+    <view class='collect-box'>
+      <view class='mycollect'>
+        <image src='http://127.0.0.1:3008/img/about.png'></image>
+        <text>关于心情物语</text>
+      </view>
+      <view class='gotocollect' bindtap='change'>
+        <image src="{{isFolded?'http://127.0.0.1:3008/img/right.png':'http://127.0.0.1:3008/img/bottom.png'}}"></image>
+      </view>
+    </view>
+    <view class="about ">
+      <text class="{{isFolded?'hide':'show'}}">心情是不定的，喜怒哀乐都会有，有时候自己都不知道心情为什么突然就不好了，可以发表一下自己此时此刻的心情。这个心情物语就是缓解心情的小程序，说出来自己此时此刻的心情，肯定会轻松许多。</text>
+    </view>
+  </view>
+</view>

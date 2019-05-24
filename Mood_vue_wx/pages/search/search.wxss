@@ -1,0 +1,128 @@
+.mySearch{
+  padding: 40rpx 30rpx 40rpx 20rpx;
+  padding-top: 40rpx;
+  position:relative;
+  background-color: #f7f7f7;
+}
+.mySearch .mySearch-box form{
+  display: inline-block;
+  height: 80rpx;
+  width: 100%;
+  border:3px solid #ffc0ae;
+  border-radius: 19px;
+}
+/*==========搜索input输入框============*/
+.mySearch .mySearch-box form .search-input{width:550rpx;}
+.mySearch .mySearch-box form .search-input input{
+  height:80rpx;
+  width:550rpx;
+  padding-left:15rpx; 
+}
+/*==========搜索按钮============*/
+.mySearch .mySearch-box form .search-btn{
+  position: absolute;
+  top:47rpx;
+  right:20rpx;
+  width: 140rpx;
+}
+.mySearch .mySearch-box form .search-btn button{
+  width: 140rpx;
+  height: 80rpx;
+  background: #ffc0ae;
+  color:#fff;
+  border-radius: 0 19px 19px 0;
+  line-height: 80rpx;
+}
+/*==========搜索结果样式============*/
+.mySearch .mySearch-box .results{
+  padding: 50rpx 30rpx;
+}
+.mySearch .mySearch-box .results .content-box{
+  padding: 10rpx;
+  border-radius: 20rpx;
+  background-color: #f2f3c2;
+  margin-bottom: 30rpx;
+}
+.mySearch .mySearch-box .results .content-box .content-img{
+  width: 100%;
+  text-align: center;
+}
+.mySearch .mySearch-box .results .content-box .content-img image{
+  width: 100%;
+  border-radius: 20rpx;
+}
+.mySearch .mySearch-box .results .content-box .content-text{
+  padding:0rpx 10rpx 10rpx;
+  text-align: left;
+  border-bottom: 1px solid #d3d2d2;
+}
+.mySearch .mySearch-box .results .content-box .content-foot{
+  height: 80rpx;
+  padding: 0rpx 25rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.mySearch .mySearch-box .results .content-box .content-foot .foot-heart,
+.mySearch .mySearch-box .results .content-box .content-foot .foot-report{
+  width: 80rpx;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.mySearch .mySearch-box .results .content-box .content-foot .foot-heart image,
+.mySearch .mySearch-box .results .content-box .content-foot .foot-report image{
+  width: 50rpx;
+  height: 50rpx;
+}
+/*==========搜索无结果============*/
+.notfound{
+  margin:0 auto;
+  text-align: center;
+  color:#999;
+  padding-bottom:300rpx;
+}
+.notfound image{
+  display: block;
+  width:100%;
+}
+/*==========搜索历史记录盒子============*/
+.mySearch .mySearch-box .Search_record_text{
+  font-size: 32rpx;
+  color: #898989;
+  margin-left: 20px;
+  position: relative;
+  
+}
+.mySearch .mySearch-box .Search_record_text image{
+  width:45rpx;
+  height:45rpx;
+  position:absolute;
+  right:20px;
+}
+.mySearch .mySearch-box .History-list {
+  margin-left: 20rpx;
+  margin-top: 28rpx;
+  margin-right: 20rpx;
+}
+.mySearch .mySearch-box .History-list>text {
+  display: inline-block;
+  height: 56rpx;
+  border-radius: 5px;
+  background: #f5f5f5;
+  max-width: 100%;
+  padding-left: 24rpx;
+  padding-right: 24rpx;
+  line-height: 56rpx;
+  font-size: 26rpx;
+  color: #393939;
+  margin-bottom: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+  box-sizing: border-box;
+  margin-right: 20rpx;
+  padding-bottom:750rpx;
+}

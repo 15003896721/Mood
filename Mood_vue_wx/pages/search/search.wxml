@@ -1,0 +1,54 @@
+<!-- 搜索 -->
+<view class='mySearch'>
+  <view class='mySearch-box'>
+    <form bindsubmit='searchKey'>
+      <view class='search-input'>
+        <input type='text' placeholder='请输入搜索商品名称' name='key' bindinput='searchbtn' ></input>
+      </view>
+      <view class='search-btn'>
+        <button formType='submit' >{{SearchText}}</button>
+      </view>
+    </form>
+    <!--搜索结果-->
+    <view  class='results'>
+      <view wx:if="{{searchResults.length>0}}">
+        <view wx:for="{{searchResults}}" wx:key="lindex" class='content-box'>
+          <view class='content-img'>
+            <image src="{{item.imgs}}" mode="widthFix"></image>
+          </view>
+          <view class='content-text'>
+            <text>{{item.texts}} </text>
+          </view>
+          <!--<view class='content-foot'>
+             <view class='foot-heart'>
+              <image src="http://127.0.0.1:3008/img/heart.png" mode="widthFix"></image>
+              <text>0</text>
+            </view> 
+            <view class='foot-report'>
+              <image src="http://127.0.0.1:3008/img/report.png" mode="widthFix"></image>
+              <text>0</text>
+            </view>
+          </view> -->
+        </view>
+      </view>
+      <view wx:if="{{searchResults.length==0}}" class="notfound">
+        <image src="http://127.0.0.1:3008/img/404.gif"></image>
+        <view>抱歉，未找到你喜欢的商品</view>
+      </view>
+      
+    </view> 
+    <!--搜索记录盒子-->
+    <view class="Search_record_box" hidden="{{hiddenName}}">
+      <view class="Search_record_text">
+        <text>搜索记录</text>
+        <image bindtap='deleteHistory' src='http://127.0.0.1:3008/img/del.png'></image>
+      </view>
+      <!--记录词的盒子-->
+      <view class="History_box">
+        <view class="History-list">
+          <text wx:for="{{history}}" wx:key="index">{{item}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

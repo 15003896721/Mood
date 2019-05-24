@@ -1,0 +1,24 @@
+<view class="home">
+<view class='title'><image src='../../pages/img/flower.png'></image> 每日心情</view>
+  <view class='report-content' wx:for="{{publishList}}" wx:key="index" data-id="{{item.id}}">
+    <view class='content-img'>
+      <image src="{{item.imgs}}" mode="widthFix"></image>
+    </view>
+    <view class='content-text'>
+      <text>{{item.texts}}</text>
+    </view>
+    <view class='content-foot'>
+    <view class='foot-time'>
+        <text data-id='item.id'>{{item.timer}}</text>
+      </view>
+      <view class='foot-heart'>
+        <image class="save" wx:if="isClick" src="http://127.0.0.1:3008/img/heart.png" bindtap="mycollect" mode="widthFix" data-id="{{item.id}}" ></image>
+        <text class="saveText " data-id="{{item.id}}"  bindtap='counts'>{{item.counts}}</text>
+      </view>
+      <!-- <view class='foot-report'>
+        <image src="http://127.0.0.1:3008/img/report.png" mode="widthFix"></image>
+        <text>0</text>
+      </view> -->
+    </view>
+  </view>
+</view>

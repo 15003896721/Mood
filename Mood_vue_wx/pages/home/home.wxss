@@ -1,0 +1,62 @@
+.home{
+  padding: 30rpx;
+  text-align:center;
+  background-color: #fff5f5;
+}
+.home .title{
+  margin-bottom: 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.home .title image{
+  width: 70rpx;
+  height: 70rpx;
+}
+.home .report-content{
+  padding: 10rpx;
+  border-radius: 20rpx;
+  background-color: #f2f3c2;
+  margin-bottom: 30rpx;
+}
+.home .report-content .content-img{
+  width: 100%;
+  text-align: center;
+}
+.home .report-content .content-img image{
+  width: 100%;
+  border-radius: 20rpx;
+}
+.home .report-content .content-text{
+  padding:0rpx 10rpx 10rpx;
+  text-align: left;
+  border-bottom: 1px solid #d3d2d2;
+}
+.home .report-content .content-foot{
+  height: 80rpx;
+  padding: 0rpx 25rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+}
+.home .report-content .content-foot .foot-heart{
+  width: 90rpx;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home .report-content .content-foot .foot-heart image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.home .report-content .content-foot .foot-time text,
+.home .report-content .content-foot .foot-heart text{
+  color: rgb(37, 33, 33);
+  font-family: serif;
+  font-size: 24px;
+}

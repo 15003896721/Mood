@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/me/me",
+    "pages/home/home",
+    "pages/collect/collect",
+    "pages/search/search",
+    "pages/add/add"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#f5cccc",
+    "navigationBarTitleText": "心情物语",
+    "enablePullDownRefresh": true,
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "pages/img/home.png",
+        "selectedIconPath": "pages/img/home-active.png"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "发表",
+        "iconPath": "pages/img/publish.png",
+        "selectedIconPath": "pages/img/publish-active.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "pages/img/search.png",
+        "selectedIconPath": "pages/img/search-active.png"
+      },
+      {
+        "pagePath": "pages/collect/collect",
+        "text": "收藏",
+        "iconPath": "pages/img/heart.png",
+        "selectedIconPath": "pages/img/heart-active.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "pages/img/me.png",
+        "selectedIconPath": "pages/img/me-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

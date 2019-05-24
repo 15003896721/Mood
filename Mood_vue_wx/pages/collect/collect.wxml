@@ -1,0 +1,23 @@
+<view class='collect-box'>
+  <view class="mycollect-empty" wx:if="{{collects.length==0}}">
+    <view class="collect-empty">
+      <text class='empty-text'>收藏列表空空如也</text>  
+      <p></p>
+      <view bindtap='gotocollect' class="gocollect" >去收藏</view>
+    </view>
+  </view> 
+  <view class="collect-list" bindtap='collectlist' wx:for="{{collects}}" wx:key='index' wx:if="{{collects.length>0}}">
+    <view class='collect-img'>
+      <image src="{{item.imgs}}"   mode="widthFix"></image>
+    </view>
+    <view class='collect-text'>
+      <text>{{item.texts}}</text>
+    </view>
+    <view class='collect-foot' data-id="{{item.id}}" bindtap='del'>
+        <text>取消收藏</text>
+        <image src="http://127.0.0.1:3008/img/heart-active.png" mode="widthFix"></image>
+    </view>
+  </view>
+</view>
+
+
