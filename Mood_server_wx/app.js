@@ -148,9 +148,9 @@ server.use("/addMoods",(req,res)=>{
 
 //功能四：搜索功能
 server.get("/search",(req,res)=>{
- /* var key=req.query.key;
+  var key=req.query.key;
   console.log(key);
-  var pno=req.query.pno;
+  /*var pno=req.query.pno;
   var ps=req.query.pageSize;
   if(!pno){pno=1}
   if(!ps){ps=5}
@@ -221,7 +221,7 @@ server.use("/count",(req,res)=>{
     var count=eval(result[0].counts)+1;
     // console.log(count);
     var sql1='UPDATE mood_publish SET counts=? WHERE id=?';
-    pool.query(sql1,[count,id],(err,result)=>{
+    pool.query(sql1,[counts,id],(err,result)=>{
       if(err) throw err;
       // console.log(result);
       if(result.affectedRows>0){
